@@ -90,7 +90,7 @@ class Bayt
      *
      * @throws BaytException
      */
-    public function nearestMosque(string $latitude, string $longitude): array
+    public function nearestMosque(float $latitude, float $longitude): array
     {
         $query = http_build_query(['lat' => $latitude, 'lon' => $longitude]);
 
