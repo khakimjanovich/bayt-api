@@ -15,7 +15,7 @@ class MosqueResource extends Data
         public int $province_id,
         public string $name,
         public string $url,
-        public string $bomodod,
+        public ?string $bomodod,
         public string $xufton,
         #[MapName('hasLocation')]
         public bool $has_location,
