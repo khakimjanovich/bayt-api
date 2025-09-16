@@ -19,8 +19,8 @@ class MosqueResource extends Data
         public string $xufton,
         #[MapName('hasLocation')]
         public bool $has_location,
-        public string $latitude,
-        public string $longitude,
+        public float $latitude,
+        public float $longitude,
         public ?string $altitude,
         public ?string $distance,
     ) {}
