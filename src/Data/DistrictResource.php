@@ -14,7 +14,7 @@ class DistrictResource extends Data
         public string $name,
         #[MapName('mosqueCount')]
         public int $mosque_count,
-        public string $latitude,
-        public string $longitude,
+        public float $latitude,
+        public float $longitude,
     ) {}
 }
