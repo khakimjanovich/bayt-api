@@ -72,6 +72,8 @@ class Bayt
      */
     public function prayerTimes(int $province_id, int $month, int $day): array
     {
+        $month = ($month < 10) ? '0'.$month : $month;
+
         $query = http_build_query(['provinceId' => $province_id, 'month' => $month, 'day' => $day]);
 
         return PrayerTimeResource::collect($this->get('/api/v1/prayer_times?'.$query));
